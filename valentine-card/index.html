@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя валентинка</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="valentine-page">
+      <div class="valentine-content">
+        <h1 class="valentine-title">С Днём святого Валентина</h1>
+
+        <div class="card-wrapper">
+          <div class="heart-card" id="heartCard">
+            <div class="heart-card-inner">
+              <div class="heart-card-face heart-card-front">
+                <div class="heart-shape heart-front"></div>
+                <p class="tap-hint">нажми на сердечко</p>
+              </div>
+              <div class="heart-card-face heart-card-back">
+                <div class="heart-shape heart-back">
+                  <img
+                    src="photo.png"
+                    alt="Моя валентинка"
+                    class="photo-in-heart"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="valentine-subtitle" id="valentineMessage">
+          Будешь моей валентинкой. Тыкни на сердечко
+        </p>
+      </div>
+
+      <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
